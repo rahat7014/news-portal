@@ -3688,4 +3688,66 @@ $(document).ready(function () {
     populateSelect('#upazila', filteredUpazilas);
   });
 
+  //Video section and video popup js start
+
+  var swiper = new Swiper(".video-slider", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    loop: true,
+    autoplay: {
+      delay: 10000,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 10,
+      },
+      1024: {
+        slidesPerView: 5,
+        spaceBetween: 10,
+      },
+    },
+  });
+
+  $('.video-btn').magnificPopup({
+    type: 'iframe',
+    iframe: {
+      markup: '<div class="mfp-iframe-scaler"><div class="mfp-close"></div><iframe class="mfp-i' +
+        'frame" frameborder="0" allowfullscreen></iframe></div>',
+      patterns: {
+        youtube: {
+          index: 'youtube.com/',
+          id: 'v=',
+          src: 'https://www.youtube.com/embed/%id%?autoplay=1'
+        },
+        vimeo: {
+          index: 'vimeo.com/',
+          id: '/',
+          src: 'https://player.vimeo.com/video/%id%?autoplay=1'
+        },
+        gmaps: {
+          index: '//maps.google.',
+          src: '%id%&output=embed'
+        }
+
+        // you may add here more sources
+
+      },
+
+      srcAction: 'iframe_src', // Templating object key. First part defines CSS selector, second attribute. "iframe_src" means: find "iframe" and set attribute "src".
+    }
+
+  });
+
+  //Video section and video popup js End
+
 });
