@@ -1,4 +1,91 @@
 $(document).ready(function () {
+
+  // new add -1 start
+
+  $('.expand-btn')
+    .click(function () {
+      $(this)
+        .next('.expandable')
+        .toggleClass('show')
+        .siblings()
+        .removeClass('show');
+    });
+
+  // new add -1 end
+
+  $(window).scroll(function () {
+    $scrollamount = $(window).scrollTop();
+
+    if ($scrollamount > 100) {
+      $(".sticky-menu").addClass("fixed");
+      $('.search').addClass("search-none");
+      $('.big-nav-logo').css({
+        'display': 'block'
+      });
+    } else {
+      $(".sticky-menu").removeClass("fixed");
+      $('.search').removeClass("search-none");
+      $('.big-nav-logo').css({
+        'display': 'none'
+      });
+    }
+  });
+
+  // merquee hide button js
+
+  $(window).scroll(function () {
+    if ($(window).scrollTop() > 700) {
+      $('.bottom-to-top').css({
+        "opacity": "1",
+        "pointer-events": "auto"
+      });
+
+    } else {
+      $('.bottom-to-top').css({
+        "opacity": "0",
+        "pointer-events": "none"
+      });
+
+    }
+  });
+
+  $('.bottom-to-top').click(function () {
+    $('html').animate({
+      scrollTop: 0
+    }, 500)
+  });
+
+  $('.fa-window-close').click(function () {
+    $('.scroll-one').addClass('hide');
+  });
+
+  //drop new add-2 change the code , plz replace old code of this porson (start)
+
+  $('.ham-burger').click(function () {
+    $('.mobile-nav-link').addClass('show');
+  });
+
+  $('.top-cancel .fa-times').click(function () {
+    $('.mobile-nav-link').removeClass('show');
+  });
+
+  $('.search-open').click(function () {
+    $('.search-area').addClass('search-show');
+  });
+
+  $('.mobile-search').click(function () {
+    $('.mobile-search-area').addClass('search-show');
+  });
+
+  $('.btn-close').click(function () {
+    $('.search-area').removeClass('search-show');
+  });
+
+  $('.mobile-search-area .btn-close').click(function () {
+    $('.mobile-search-area').removeClass('search-show');
+  });
+
+  /////
   const thumbSwiper = new Swiper(".mySwiper", {
     slidesPerView: 'auto',
     spaceBetween: 10,
@@ -3663,7 +3750,7 @@ $(document).ready(function () {
   // Function to populate the select dropdown
   function populateSelect(selector, items) {
     const $select = $(selector);
-    $select.empty().append('<option value="">Select</option>');
+    $select.empty().append('<option value="">নির্বাচন করুন</option>');
     items.forEach(item => {
       $select.append(`<option value="${item.id}">${item.bn_name} (${item.name})</option>`);
     });
@@ -3748,6 +3835,31 @@ $(document).ready(function () {
 
   });
 
-  //Video section and video popup js End
+  //
+  // Main big slider
+  var mainSlider = new Swiper(".main-slider", {
+    loop: true,
+    spaceBetween: 10,
+    thumbs: {
+      swiper: thumbSlider
+    }
+  });
+
+  // Thumbnail slider
+  var thumbSlider = new Swiper(".thumb-slider", {
+    loop: true,
+    spaceBetween: 10,
+    slidesPerView: 5,
+    slideToClickedSlide: true,
+  });
+
+  // Group thumbnail click handler
+  document.querySelectorAll('.group-item').forEach(function (group) {
+    group.addEventListener('click', function () {
+      var groupName = this.getAttribute('data-group');
+      // এখানে তুমি ফিল্টার করে সেই গ্রুপের ছবি লোড করাতে পারো
+      alert('Loading Group: ' + groupName);
+    });
+  });
 
 });
