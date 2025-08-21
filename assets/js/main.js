@@ -84,7 +84,106 @@ $(document).ready(function () {
   $('.mobile-search-area .btn-close').click(function () {
     $('.mobile-search-area').removeClass('search-show');
   });
+  ////
 
+  $('.search-toggle-btn').click(function () {
+    $('.main-links').addClass('hide');
+    $('.search-area').addClass('show');
+  })
+
+  $('.hide-search').click(function () {
+    $('.main-links').removeClass('hide');
+    $('.search-area').removeClass('show');
+  })
+  //////////////////////////////////////////////////////////////////////////////////////
+
+function toBnDigits(str) {
+    const map = { "0":"০","1":"১","2":"২","3":"৩","4":"৪","5":"৫","6":"৬","7":"৭","8":"৮","9":"৯" };
+    return String(str).replace(/\d/g, d => map[d]);
+  }
+
+ 
+  function gregorianToBangla(gDate) {
+   
+    const parts = new Intl.DateTimeFormat('en-GB', {
+      timeZone: 'Asia/Dhaka',
+      year: 'numeric', month: 'numeric', day: 'numeric'
+    }).formatToParts(gDate).reduce((acc, p) => (acc[p.type]=+p.value, acc), {});
+
+    const gy = parts.year, gm = parts.month, gd = parts.day;
+
+   
+    const banglaYear = (gm > 4 || (gm === 4 && gd >= 14)) ? (gy - 593) : (gy - 594);
+
+   
+    const newYear = new Date(Date.UTC(gy, 3, 14, 0, 0, 0)); 
+    const current = new Date(Date.UTC(gy, gm - 1, gd, 0, 0, 0));
+    if (current < newYear) {
+      newYear.setUTCFullYear(gy - 1);
+    }
+
+   
+    const daysPassed = Math.floor((current - newYear) / 86400000); 
+
+    
+    const monthNames = ["বৈশাখ","জ্যৈষ্ঠ","আষাঢ়","শ্রাবণ","ভাদ্র","আশ্বিন","কার্তিক","অগ্রহায়ণ","পৌষ","মাঘ","ফাল্গুন","চৈত্র"];
+    const isLeapGregorian = ((gy % 4 === 0 && gy % 100 !== 0) || (gy % 400 === 0));
+    const monthLengths = [31,31,31,31,31,30,30,30,30,30,(isLeapGregorian?30:29),30];
+
+   
+    let rem = daysPassed, m = 0;
+    while (m < 12 && rem >= monthLengths[m]) {
+      rem -= monthLengths[m];
+      m++;
+    }
+    const banglaMonthIndex = m;             
+    const banglaDay = rem + 1;                  
+
+    return {
+      year: banglaYear,
+      monthName: monthNames[banglaMonthIndex],
+      day: banglaDay
+    };
+  }
+
+  function formatBanglaFull(gDate = new Date()) {
+   
+    const weekday = new Intl.DateTimeFormat('bn-BD', { timeZone: 'Asia/Dhaka', weekday: 'long' }).format(gDate);
+    const day = new Intl.DateTimeFormat('bn-BD', { timeZone: 'Asia/Dhaka', day: '2-digit' }).format(gDate);
+    const month = new Intl.DateTimeFormat('bn-BD', { timeZone: 'Asia/Dhaka', month: 'long' }).format(gDate);
+    const year = new Intl.DateTimeFormat('bn-BD', { timeZone: 'Asia/Dhaka', year: 'numeric' }).format(gDate);
+
+  
+    const bn = gregorianToBangla(gDate);
+
+    return `${weekday}, ${day} ${month} ${year}, ${toBnDigits(bn.day)} ${bn.monthName} ${toBnDigits(bn.year)}`;
+  }
+
+  
+  const sample = new Date('2025-08-22T00:00:00+06:00'); 
+  document.getElementById('bn-date').textContent = formatBanglaFull(sample);
+
+
+
+  //////////////////////////////////////////////////////////////////////////////////////
+
+
+
+  // Toggle dropdown when clicking bar button
+  document.querySelector(".expend-navbar").addEventListener("click", function (e) {
+    e.preventDefault();
+    document.querySelector(".all-news-links").classList.toggle("show");
+  });
+
+  // Close dropdown when clicking outside
+  document.addEventListener("click", function (e) {
+    let toggleBtn = document.querySelector(".expend-navbar");
+    let dropdownMenu = document.querySelector(".all-news-links");
+
+    if (!toggleBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
+      dropdownMenu.classList.remove("show");
+    }
+  });
   /////
   const thumbSwiper = new Swiper(".mySwiper", {
     slidesPerView: 'auto',

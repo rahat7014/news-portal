@@ -19,7 +19,7 @@
 <body>
     <!-- Nav header/big screen logo date social area Start -->
 
-    <div class="container d-none d-lg-flex py-3">
+    <div class="container d-none  py-3 d-none">
         <div class="d-flex justify-content-between align-items-center w-100">
 
             <p class="d-flex align-items-center date-area">
@@ -74,7 +74,7 @@
     <!-- Nav header/big screen logo date social area End -->
 
     <!-- Mobile navber -->
-    <div class="mobile-menu d-block d-lg-none">
+    <div class="mobile-menu d-block d-lg-none d-none">
         <div class="container">
             <div class="mobile-menu-list">
                 <div class="ham-burger">
@@ -267,7 +267,7 @@
 
     <!-- main nav area start here -->
 
-    <div class="navbar navbar-expand-lg sticky-menu">
+    <div class="navbar navbar-expand-lg sticky-menu d-none">
         <div class="container nav-container">
             <ul>
                 <li>
@@ -418,7 +418,551 @@
         </div>
     </div>
 
-    <section class="heading-section mt-5" id="top-lead-content">
+
+    <header>
+        <div class="top-header">
+            <div class="container">
+                <div class="top-header-flex">
+                    <div class="main-logo">
+                        <img src="assets/img/logo.png" alt="main-logo" class="img-fluid">
+                    </div>
+                    <div class="main-links d-flex">
+                        <div class="nav-item">
+                            <a class="nav-link" href="#!"><i class="fa-sharp fa-solid fa-table-list me-2"></i>আজকের
+                                পত্রিকা</a>
+                        </div>
+                        <div class="nav-item">
+                            <a class="nav-link" href="#!"><i class="fa-regular fa-newspaper me-2"></i>ই-পেপার</a>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#!" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false"><i class="fa fa-book me-2"></i>ম্যাগাজিন </a>
+                            <ul class="dropdown-menu megazine-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#">ঈদ আনন্দ ২০২৫</a></li>
+                                <li><a class="dropdown-item" href="#">স্বাস্থ্য সংখ্যা ২০২৫</a></li>
+                                <li><a class="dropdown-item" href="#">ঈদ সংখ্যা ২০২৫</a></li>
+                                <li><a class="dropdown-item" href="#">ঈদ আনন্দ ২০২৪</a></li>
+                                <li><a class="dropdown-item" href="#">ঈদ সংখ্যা ২০২৪</a></li>
+                                <li><a class="dropdown-item" href="#">ঈদ সংখ্যা ২০২৩</a></li>
+                                <li><a class="dropdown-item" href="#">সারাবেলা ম্যাগাজিন</a></li>
+                                <li><a class="dropdown-item" href="#">টি ২০ ম্যাগাজিন</a></li>
+                                <li><a class="dropdown-item" href="#">ফ্রি হিট</a></li>
+                            </ul>
+                        </div>
+                        <div class="nav-item">
+                            <a class="nav-link" href="#!"><i class="fa-solid fa-box-archive me-2"></i>আর্কাইভ</a>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#!" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false"><i class="fa-solid fa-thumbs-up me-2"></i>সোশ্যাল মিডিয়া</a>
+                            <div class="dropdown-menu social-media-menu dropdown-menu-end">
+                                <div class="social-media-list">
+                                    <div class="border-bottom mb-2">
+                                        <div class="row d-flex">
+                                            <div class="col-12"><span class="social-name-title">ফেসবুক পেজ</span></div>
+                                            <div class="col-lg-3">
+                                                <a class="social-links" href="#!">
+                                                    <i class="fa-brands fa-square-facebook"></i> Kalbela
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <a class="social-links" href="#!">
+                                                    <i class="fa-brands fa-square-facebook"></i> Kalbela Online
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <a class="social-links" href="#!">
+                                                    <i class="fa-brands fa-square-facebook"></i> Kalbela News
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <a class="social-links" href="#!">
+                                                    <i class="fa-brands fa-square-facebook"></i> Kalbela.com
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <a class="social-links" href="#!">
+                                                    <i class="fa-brands fa-square-facebook"></i> Kalbela World
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <a class="social-links" href="#!">
+                                                    <i class="fa-brands fa-square-facebook"></i> Kalbela Sports
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nav-item">
+                            <a class="nav-link" href="#!"><i class="fa-solid fa-retweet me-2"></i>বাংলা কনভার্টার</a>
+                        </div>
+                    </div>
+                    <div class="search-area d-none">
+                        <form>
+                            <div class="d-flex align-items-center">
+                                <input type="email" class="form-control" placeholder="সার্চ করুন...">
+                                <button type="submit" class="btn btn-primary"><i
+                                        class="fa-solid fa-magnifying-glass"></i></button>
+                                <button type="submit" class="btn btn-danger ms-2 hide-search"><i
+                                        class="fa-solid fa-xmark"></i></button>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="main-others">
+                        <div class="nav-item">
+                            <a class="nav-link search-toggle-btn" href="#!"><i
+                                    class="fa-solid fa-magnifying-glass"></i></a>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle notification-toggle" href="#!" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-bell"></i></a>
+                            <span class="notification-toggle-badge"></span>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#">ঈদ আনন্দ ২০২৫</a></li>
+                                <li><a class="dropdown-item" href="#">স্বাস্থ্য সংখ্যা ২০২৫</a></li>
+                                <li><a class="dropdown-item" href="#">ঈদ সংখ্যা ২০২৫</a></li>
+                                <li><a class="dropdown-item" href="#">ঈদ আনন্দ ২০২৪</a></li>
+                                <li><a class="dropdown-item" href="#">ঈদ সংখ্যা ২০২৪</a></li>
+                                <li><a class="dropdown-item" href="#">ঈদ সংখ্যা ২০২৩</a></li>
+                                <li><a class="dropdown-item" href="#">সারাবেলা ম্যাগাজিন</a></li>
+                                <li><a class="dropdown-item" href="#">টি ২০ ম্যাগাজিন</a></li>
+                                <li><a class="dropdown-item" href="#">ফ্রি হিট</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-navbar">
+            <div class="container">
+                <div class="navbar-area d-flex align-items-center">
+                    <ul class="navbar-links-area">
+                        <li class="nav-item">
+                            <a class="nav-link animated" href="index.html"><i class="fa-solid fa-house"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link animated" href="category.html">সর্বশেষ
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link animated" href="category.html">জাতীয়
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link animated" href="category.html">রাজনীতি
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link animated" href="category.html">সারাদেশ
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link animated" href="category.html">বিশ্ব
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link animated" href="category.html">খেলা
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link animated" href="category.html">শিক্ষা
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link animated" href="category.html">বাণিজ্য
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link animated" href="category.html">মতামত
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link animated" href="category.html">লাইফস্টাইল
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link animated" href="category.html">ভিডিও</a>
+                        </li>
+                        <li class="nav-item"><a href="#!" class="nav-link dropdown-toggle expend-navbar" href="#!"
+                                type="button" data-bs-toggle="dropdown" aria-expanded="false"><i
+                                    class="fa-solid fa-bars"></i></a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <div class="dropdown-menu dropdown-menu-end all-news-links">
+                        <div class="tm-dt-area">
+                            <div id="bn-date"></div>
+                        </div>
+                        <ul>
+                            <li><a class="dropdown-item" href="#">সর্বশেষ</a></li>
+                            <li><a class="dropdown-item" href="#">জাতীয়</a></li>
+                            <li><a class="dropdown-item" href="#">রাজনীতি</a></li>
+                            <li><a class="dropdown-item" href="#">সারাদেশ</a></li>
+                            <li><a class="dropdown-item" href="#">বিশ্ব</a></li>
+                            <li><a class="dropdown-item" href="#">খেলা</a></li>
+                            <li><a class="dropdown-item" href="#">শিক্ষা</a></li>
+                            <li><a class="dropdown-item" href="#">বাণিজ্য</a></li>
+                            <li><a class="dropdown-item" href="#">মতামত</a></li>
+                            <li><a class="dropdown-item" href="#">লাইফস্টাইল</a></li>
+                            <li><a class="dropdown-item" href="#">আইন-আদালত</a></li>
+                            <li><a class="dropdown-item" href="#">অপরাধ</a></li>
+                            <li><a class="dropdown-item" href="#">স্বাস্থ্য</a></li>
+                            <li><a class="dropdown-item" href="#">ধর্ম</a></li>
+                            <li><a class="dropdown-item" href="#">বিনোদন</a></li>
+                            <li><a class="dropdown-item" href="#">প্রযুক্তি</a></li>
+                            <li><a class="dropdown-item" href="#">রাজধানী</a></li>
+                            <li><a class="dropdown-item" href="#">শিল্প-সাহিত্য</a></li>
+                            <li><a class="dropdown-item" href="#">প্রবাস</a></li>
+                            <li><a class="dropdown-item" href="#">চাকরি</a></li>
+                            <li><a class="dropdown-item" href="#">চট্টগ্রাম সারাবেলা</a></li>
+                            <li><a class="dropdown-item" href="#">নারী-শিশু</a></li>
+                            <li><a class="dropdown-item" href="#">আইন ও পরামর্শ</a></li>
+                            <li><a class="dropdown-item" href="#">সোশ্যাল মিডিয়া</a></li>
+                            <li><a class="dropdown-item" href="#">বিচিত্র</a></li>
+                            <li><a class="dropdown-item" href="#">কর্পোরেট</a></li>
+                            <li><a class="dropdown-item" href="#">নবযাত্রার ১ বছর</a></li>
+                            <li><a class="dropdown-item" href="#">পরিবেশ ও জলবায়ু</a></li>
+                            <li><a class="dropdown-item" href="#">পিএসআই</a></li>
+                            <li><a class="dropdown-item" href="#">দ্বাদশ জাতীয় সংসদ নির্বাচন</a></li>
+                            <li><a class="dropdown-item" href="#">রম্যবেলা</a></li>
+                            <li><a class="dropdown-item" href="#">অডিও</a></li>
+                        </ul>
+                        <div class="extra-links d-flex justify-content-center">
+                            <li class="nav-item"><a class="nav-link" href="category.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" x="0" y="0"
+                                        viewBox="0 0 510 510" style="enable-background:new 0 0 512 512"
+                                        xml:space="preserve" class="hovered-paths me-2">
+                                        <g>
+                                            <linearGradient id="c" x1="172.48" x2="497.848" y1="110.639" y2="436.007"
+                                                gradientTransform="rotate(6.28 255.57 -277.231)"
+                                                gradientUnits="userSpaceOnUse">
+                                                <stop offset="0" stop-color="#ffa936"></stop>
+                                                <stop offset=".411" stop-color="#ff8548"></stop>
+                                                <stop offset=".778" stop-color="#ff6c54"></stop>
+                                                <stop offset="1" stop-color="#ff6359"></stop>
+                                            </linearGradient>
+                                            <linearGradient id="d" x1="490.487" x2="466.43" y1="159.015" y2="164.322"
+                                                gradientUnits="userSpaceOnUse">
+                                                <stop offset="0" stop-color="#f82814" stop-opacity="0"></stop>
+                                                <stop offset="1" stop-color="#c0272d"></stop>
+                                            </linearGradient>
+                                            <linearGradient id="a">
+                                                <stop offset="0" stop-color="#cdec7a"></stop>
+                                                <stop offset=".216" stop-color="#b0e995"></stop>
+                                                <stop offset=".561" stop-color="#87e4bb"></stop>
+                                                <stop offset=".835" stop-color="#6ee1d2"></stop>
+                                                <stop offset="1" stop-color="#65e0db"></stop>
+                                            </linearGradient>
+                                            <linearGradient xlink:href="#a" id="e" x1="15.52" x2="340.888" y1="104.705"
+                                                y2="430.073" gradientTransform="rotate(-10.66 254.843 -276.812)"
+                                                gradientUnits="userSpaceOnUse"></linearGradient>
+                                            <linearGradient id="b">
+                                                <stop offset="0" stop-color="#cdec7a" stop-opacity="0"></stop>
+                                                <stop offset=".235" stop-color="#9ad57d" stop-opacity=".235"></stop>
+                                                <stop offset=".604" stop-color="#51b482" stop-opacity=".604"></stop>
+                                                <stop offset=".868" stop-color="#239f85" stop-opacity=".868"></stop>
+                                                <stop offset="1" stop-color="#119786"></stop>
+                                            </linearGradient>
+                                            <linearGradient xlink:href="#b" id="f" x1="491.682" x2="450.637"
+                                                y1="256.546" y2="256.546" gradientUnits="userSpaceOnUse">
+                                            </linearGradient>
+                                            <linearGradient xlink:href="#b" id="g" x1="176.731" x2="176.731"
+                                                y1="466.917" y2="442.601" gradientUnits="userSpaceOnUse">
+                                            </linearGradient>
+                                            <linearGradient id="h" x1="88.264" x2="413.632" y1="111.753" y2="437.121"
+                                                gradientUnits="userSpaceOnUse">
+                                                <stop offset="0" stop-color="#f8f6fb"></stop>
+                                                <stop offset="1" stop-color="#efdcfb"></stop>
+                                            </linearGradient>
+                                            <linearGradient id="i" x1="112.768" x2="430.112" y1="101.155" y2="514.021"
+                                                gradientUnits="userSpaceOnUse">
+                                                <stop offset="0" stop-color="#18cefb"></stop>
+                                                <stop offset=".297" stop-color="#2bb9f9"></stop>
+                                                <stop offset=".735" stop-color="#42a0f7"></stop>
+                                                <stop offset="1" stop-color="#4a97f6"></stop>
+                                            </linearGradient>
+                                            <linearGradient id="j" x1="75.588" x2="214.616" y1="316.53" y2="497.406"
+                                                gradientUnits="userSpaceOnUse">
+                                                <stop offset="0" stop-color="#cdec7a"></stop>
+                                                <stop offset=".215" stop-color="#b0e995" stop-opacity=".784"></stop>
+                                                <stop offset=".56" stop-color="#87e4bb" stop-opacity=".439"></stop>
+                                                <stop offset=".833" stop-color="#6ee1d2" stop-opacity=".165"></stop>
+                                                <stop offset=".999" stop-color="#65e0db" stop-opacity="0"></stop>
+                                            </linearGradient>
+                                            <linearGradient xlink:href="#a" id="k" x1="198.822" x2="366.499"
+                                                y1="288.474" y2="506.622" gradientUnits="userSpaceOnUse">
+                                            </linearGradient>
+                                            <linearGradient id="l" x1="117.242" x2="171.618" y1="131.922" y2="202.666"
+                                                gradientUnits="userSpaceOnUse">
+                                                <stop offset="0" stop-color="#ffd945"></stop>
+                                                <stop offset=".304" stop-color="#ffcd3e"></stop>
+                                                <stop offset=".856" stop-color="#ffad2b"></stop>
+                                                <stop offset="1" stop-color="#ffa325"></stop>
+                                            </linearGradient>
+                                            <path fill="url(#c)"
+                                                d="M426.926 470.539 40.049 427.661C21.448 425.6 8.041 408.85 10.102 390.249L45.661 69.408c2.062-18.601 18.812-32.009 37.412-29.947L469.95 82.339c18.601 2.062 32.009 18.812 29.947 37.412l-35.559 320.841c-2.061 18.601-18.811 32.009-37.412 29.947z"
+                                                opacity="1" data-original="url(#c)"></path>
+                                            <path fill="url(#d)"
+                                                d="m499.897 119.752-14.02 126.534-31.162-165.634 15.241 1.688c18.595 2.058 32 18.806 29.941 37.412z"
+                                                opacity="1" data-original="url(#d)"></path>
+                                            <path fill="url(#e)"
+                                                d="M482.373 410.94 99.837 482.904c-18.392 3.46-36.107-8.645-39.567-27.037L.59 138.626c-3.46-18.392 8.645-36.107 27.037-39.567l382.536-71.964c18.392-3.46 36.107 8.645 39.567 27.037l59.68 317.241c3.46 18.393-8.645 36.108-27.037 39.567z"
+                                                opacity="1" data-original="url(#e)"></path>
+                                            <path fill="url(#f)"
+                                                d="M457.896 97.546v317.999l24.476-4.605c18.392-3.46 30.497-21.175 27.037-39.567z"
+                                                opacity="1" data-original="url(#f)"></path>
+                                            <path fill="url(#g)"
+                                                d="m58.45 446.187 1.821 9.68c3.46 18.392 21.175 30.497 39.567 27.037l195.175-36.717z"
+                                                opacity="1" data-original="url(#g)"></path>
+                                            <path fill="url(#h)"
+                                                d="M424.01 448.166H34.765C16.05 448.166.879 432.995.879 414.28V91.474c0-18.715 15.171-33.886 33.886-33.886H424.01c18.715 0 33.886 15.171 33.886 33.886V414.28c0 18.715-15.171 33.886-33.886 33.886z"
+                                                opacity="1" data-original="url(#h)"></path>
+                                            <path fill="url(#i)"
+                                                d="M392.279 416.326H66.497c-15.663 0-28.361-12.698-28.361-28.361V117.79c0-15.663 12.698-28.361 28.361-28.361h325.782c15.663 0 28.361 12.698 28.361 28.361v270.175c0 15.663-12.698 28.361-28.361 28.361z"
+                                                opacity="1" data-original="url(#i)"></path>
+                                            <path fill="url(#j)"
+                                                d="M252.069 416.326H66.502c-15.666 0-28.37-12.694-28.37-28.359v-44.29l47.082-57.228c15.538-18.903 44.46-18.903 60.009 0l29.315 35.64z"
+                                                opacity="1" data-original="url(#j)"></path>
+                                            <path fill="url(#k)"
+                                                d="M420.643 316.75v71.217c0 15.666-12.704 28.359-28.37 28.359H97.005l77.532-94.237 95.246-115.783c15.538-18.892 44.471-18.892 60.009 0z"
+                                                opacity="1" data-original="url(#k)" class="hovered-path"></path>
+                                            <circle cx="137.225" cy="157.919" r="40.219" fill="url(#l)" opacity="1"
+                                                data-original="url(#l)"></circle>
+                                        </g>
+                                    </svg>
+                                    ফটো স্টোরি</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="category.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" x="0" y="0"
+                                        viewBox="0 0 512 512" style="enable-background:new 0 0 512 512"
+                                        xml:space="preserve" class="me-2">
+                                        <g>
+                                            <path fill="#aa3c6e"
+                                                d="M58.16 138.397c-6.496 0-12.482-4.253-14.393-10.803-2.32-7.953 2.246-16.281 10.199-18.6L255.552 50.19c7.951-2.319 16.28 2.247 18.6 10.199 2.32 7.953-2.246 16.281-10.199 18.6-213.69 62.108-201.737 59.408-205.793 59.408z"
+                                                opacity="1" data-original="#aa3c6e"></path>
+                                            <path fill="#7e325f"
+                                                d="M285 256c-57.897 0-105-47.103-105-105 0-47.901 32.023-88.113 75.552-100.81A105.122 105.122 0 0 1 285 46c57.897 0 105 47.103 105 105s-47.103 105-105 105z"
+                                                opacity="1" data-original="#7e325f" class=""></path>
+                                            <path fill="#aa3c6e"
+                                                d="M75 256c-41.355 0-75-33.645-75-75 0-33.127 22.191-62.737 53.967-72.007A75.086 75.086 0 0 1 75 106c41.355 0 75 33.645 75 75s-33.645 75-75 75z"
+                                                opacity="1" data-original="#aa3c6e"></path>
+                                            <path fill="#7e325f"
+                                                d="m490.38 434.46-122-60c-7.434-3.656-10.496-12.646-6.84-20.08 12.335-25.086 12.522 8.707 0-16.76-3.656-7.434-.594-16.424 6.84-20.08l122-60c9.93-4.882 21.62 2.327 21.62 13.46v150c0 11.065-11.631 18.371-21.62 13.46z"
+                                                opacity="1" data-original="#7e325f" class=""></path>
+                                            <path fill="#ff6e7c"
+                                                d="M375 226H15c-8.28 0-15 6.72-15 15v210c0 8.28 6.72 15 15 15h360c8.28 0 15-6.72 15-15V241c0-8.28-6.72-15-15-15z"
+                                                opacity="1" data-original="#ff6e7c"></path>
+                                            <path fill="#ff468c"
+                                                d="M390 241v210c0 8.28-6.72 15-15 15H196V226h179c8.28 0 15 6.72 15 15z"
+                                                opacity="1" data-original="#ff468c"></path>
+                                            <circle cx="75" cy="181" r="15" fill="#fff5f5" opacity="1"
+                                                data-original="#fff5f5"></circle>
+                                            <path fill="#fcf2b6"
+                                                d="M196 290.8c-.33.16-.67.33-1 .51-45.48-24.28-89.41 35.13-53.03 71.51l42.42 42.43c3.18 3.18 7.44 4.63 11.61 4.35 3.5-.22 6.93-1.67 9.61-4.35l42.42-42.43c35.91-35.91-6.38-95.21-52.03-72.02z"
+                                                opacity="1" data-original="#fcf2b6"></path>
+                                            <path fill="#ffcc91"
+                                                d="m248.03 362.82-42.42 42.43a14.86 14.86 0 0 1-9.61 4.35V290.8c45.65-23.19 87.94 36.11 52.03 72.02z"
+                                                opacity="1" data-original="#ffcc91"></path>
+                                            <path fill="#fff5f5"
+                                                d="M285 196c-24.813 0-45-20.187-45-45s20.187-45 45-45 45 20.187 45 45-20.187 45-45 45z"
+                                                opacity="1" data-original="#fff5f5"></path>
+                                        </g>
+                                    </svg>
+                                    ভিডিও স্টোরি </a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="category.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" x="0" y="0"
+                                        viewBox="0 0 682.667 682.667" style="enable-background:new 0 0 512 512"
+                                        xml:space="preserve" class="me-2">
+                                        <g>
+                                            <defs>
+                                                <clipPath id="a" clipPathUnits="userSpaceOnUse">
+                                                    <path d="M0 512h512V0H0Z" fill="#000000" opacity="1"
+                                                        data-original="#000000"></path>
+                                                </clipPath>
+                                            </defs>
+                                            <g clip-path="url(#a)" transform="matrix(1.33333 0 0 -1.33333 0 682.667)">
+                                                <path
+                                                    d="M0 0h-328.205c-20.634 0-37.362 16.728-37.362 37.363v211.902c0 34.987 28.362 63.35 63.35 63.35H0c20.635 0 37.363-16.728 37.363-37.363V37.363C37.363 16.728 20.635 0 0 0"
+                                                    style="fill-opacity:1;fill-rule:nonzero;stroke:none"
+                                                    transform="translate(375.567 141.653)" fill="#ee4e71"
+                                                    data-original="#ee4e71"></path>
+                                                <path
+                                                    d="M0 0h-328.205c-20.634 0-37.362 16.728-37.362 37.363v211.902c0 34.987 28.362 63.35 63.35 63.35H0c20.635 0 37.363-16.728 37.363-37.363V37.363C37.363 16.728 20.635 0 0 0Z"
+                                                    style="stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                                                    transform="translate(375.567 141.653)" fill="none" stroke="#000000"
+                                                    stroke-width="20" stroke-linecap="round" stroke-linejoin="round"
+                                                    stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity=""
+                                                    data-original="#000000"></path>
+                                                <path
+                                                    d="M0 0h-328.205c-20.635 0-37.362 16.728-37.362 37.363v236.115c0 21.614 17.522 39.137 39.136 39.137H0c20.635 0 37.363-16.728 37.363-37.363V37.363C37.363 16.728 20.635 0 0 0"
+                                                    style="fill-opacity:1;fill-rule:nonzero;stroke:none"
+                                                    transform="translate(418.066 99.582)" fill="#ffd866"
+                                                    data-original="#ffd866"></path>
+                                                <path
+                                                    d="M0 0h124.103c20.634 0 37.362-16.728 37.362-37.363v-237.889c0-20.635-16.728-37.363-37.362-37.363h-328.205c-20.635 0-37.363 16.728-37.363 37.363v236.115C-241.465-17.522-223.943 0-202.328 0H-80"
+                                                    style="stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                                                    transform="translate(293.964 412.197)" fill="none" stroke="#000000"
+                                                    stroke-width="20" stroke-linecap="round" stroke-linejoin="round"
+                                                    stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity=""
+                                                    data-original="#000000"></path>
+                                                <path
+                                                    d="M0 0h-337.913c-17.954 0-32.509 14.555-32.509 32.509v247.597c0 17.955 14.555 32.509 32.509 32.509H0c17.954 0 32.509-14.554 32.509-32.509V32.509C32.509 14.555 17.954 0 0 0"
+                                                    style="fill-opacity:1;fill-rule:nonzero;stroke:none"
+                                                    transform="translate(469.491 57.732)" fill="#d6effb"
+                                                    data-original="#d6effb"></path>
+                                                <path
+                                                    d="M0 0h-337.913c-17.954 0-32.509 14.555-32.509 32.509v247.597c0 17.955 14.555 32.509 32.509 32.509H0c17.954 0 32.509-14.554 32.509-32.509V32.509C32.509 14.555 17.954 0 0 0Z"
+                                                    style="stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                                                    transform="translate(469.491 57.732)" fill="none" stroke="#000000"
+                                                    stroke-width="20" stroke-linecap="round" stroke-linejoin="round"
+                                                    stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity=""
+                                                    data-original="#000000"></path>
+                                                <path
+                                                    d="M0 0h337.913c17.954 0 32.508 14.555 32.508 32.509v63.776l-59.528 44.965a23.567 23.567 0 0 1-28.082.242l-62.049-45.207L109.777 210.71c-8.76 9.033-23.072 9.589-32.508 1.265l-109.778-96.852V32.509C-32.509 14.555-17.955 0 0 0"
+                                                    style="fill-opacity:1;fill-rule:nonzero;stroke:none"
+                                                    transform="translate(131.579 57.732)" fill="#00b7ec"
+                                                    data-original="#00b7ec"></path>
+                                                <path
+                                                    d="M0 0h337.913c17.954 0 32.508 14.555 32.508 32.509v63.776l-59.528 44.965a23.567 23.567 0 0 1-28.082.242l-62.049-45.207L109.777 210.71c-8.76 9.033-23.072 9.589-32.508 1.265l-109.778-96.852V32.509C-32.509 14.555-17.955 0 0 0Z"
+                                                    style="stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                                                    transform="translate(131.579 57.732)" fill="none" stroke="#000000"
+                                                    stroke-width="20" stroke-linecap="round" stroke-linejoin="round"
+                                                    stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity=""
+                                                    data-original="#000000"></path>
+                                                <path d="m0 0 94.262-97.185"
+                                                    style="stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                                                    transform="translate(288.72 219.61)" fill="none" stroke="#000000"
+                                                    stroke-width="20" stroke-linecap="round" stroke-linejoin="round"
+                                                    stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity=""
+                                                    data-original="#000000"></path>
+                                                <path
+                                                    d="M0 0c0-18.112-14.683-32.795-32.795-32.795-18.113 0-32.796 14.683-32.796 32.795 0 18.112 14.683 32.795 32.796 32.795C-14.683 32.795 0 18.112 0 0"
+                                                    style="fill-opacity:1;fill-rule:nonzero;stroke:none"
+                                                    transform="translate(421.31 276.858)" fill="#ffd866"
+                                                    data-original="#ffd866"></path>
+                                                <path
+                                                    d="M0 0c0-18.112-14.683-32.795-32.795-32.795-18.113 0-32.796 14.683-32.796 32.795 0 18.112 14.683 32.795 32.796 32.795C-14.683 32.795 0 18.112 0 0Z"
+                                                    style="stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                                                    transform="translate(421.31 276.858)" fill="none" stroke="#000000"
+                                                    stroke-width="20" stroke-linecap="round" stroke-linejoin="round"
+                                                    stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity=""
+                                                    data-original="#000000"></path>
+                                                <path d="M0 0v0"
+                                                    style="stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                                                    transform="translate(253.964 412.197)" fill="none" stroke="#000000"
+                                                    stroke-width="20" stroke-linecap="round" stroke-linejoin="round"
+                                                    stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity=""
+                                                    data-original="#000000"></path>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    ফটোগ্যালারি</a></li>
+                            <li class="nav-item"><a class="nav-link" href="category.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" x="0" y="0"
+                                        viewBox="0 0 32 32" style="enable-background:new 0 0 512 512"
+                                        xml:space="preserve" class="me-2">
+                                        <g>
+                                            <rect width="30" height="30" x="1" y="1" fill="#87d0ed" rx="2.68"
+                                                opacity="1" data-original="#87d0ed"></rect>
+                                            <path fill="#2bb3cd"
+                                                d="M31 3.68v24.64A2.68 2.68 0 0 1 28.32 31H16V1h12.32A2.68 2.68 0 0 1 31 3.68z"
+                                                opacity="1" data-original="#2bb3cd" class=""></path>
+                                            <path fill="#133441" d="M18.14 31H3.68a2.68 2.68 0 0 1-2.09-1l8-13.83.3.53z"
+                                                opacity="1" data-original="#133441"></path>
+                                            <path fill="#394d5c"
+                                                d="M31 17.2v11.12A2.68 2.68 0 0 1 28.32 31H18.14l-4.82-8.35 9.19-15.92 1.23-2.11z"
+                                                opacity="1" data-original="#394d5c"></path>
+                                            <circle cx="8.5" cy="8.5" r="3.21" fill="#faea00" opacity="1"
+                                                data-original="#faea00"></circle>
+                                            <path fill="#ff9f00"
+                                                d="M11.71 8.5a3.2 3.2 0 0 1-3.21 3.21V5.29a3.2 3.2 0 0 1 3.21 3.21z"
+                                                opacity="1" data-original="#ff9f00"></path>
+                                            <path fill="#29384d"
+                                                d="M31 17.2v11.12A2.68 2.68 0 0 1 28.32 31h-5.81V6.73l1.23-2.11z"
+                                                opacity="1" data-original="#29384d"></path>
+                                            <path fill="#0f2436" d="M18.14 31H9.87V16.68z" opacity="1"
+                                                data-original="#0f2436" class=""></path>
+                                        </g>
+                                    </svg>
+                                    ভিডিও গ্যালারি</a></li>
+                            <li class="nav-item"><a class="nav-link" href="category.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" x="0" y="0"
+                                        viewBox="0 0 60 61" style="enable-background:new 0 0 512 512"
+                                        xml:space="preserve" class="hovered-paths me-2">
+                                        <g>
+                                            <g fill="none" fill-rule="nonzero">
+                                                <path fill="#607d8b"
+                                                    d="M13 28v18a2 2 0 0 1-2 2H6a1 1 0 0 1-1-1V27a1 1 0 0 1 1-1h5a2 2 0 0 1 2 2z"
+                                                    opacity="1" data-original="#607d8b"></path>
+                                                <path fill="#37474f"
+                                                    d="M11 26H8a2 2 0 0 1 2 2v18a2 2 0 0 1-2 2h3a2 2 0 0 0 2-2V28a2 2 0 0 0-2-2z"
+                                                    opacity="1" data-original="#37474f" class="hovered-path"></path>
+                                                <path fill="#ff9801" d="M5 29v16H3a2 2 0 0 1-2-2V31a2 2 0 0 1 2-2z"
+                                                    opacity="1" data-original="#ff9801"></path>
+                                                <path fill="#607d8b"
+                                                    d="M55 27v20a1 1 0 0 1-1 1h-5a2 2 0 0 1-2-2V28a2 2 0 0 1 2-2h5a1 1 0 0 1 1 1z"
+                                                    opacity="1" data-original="#607d8b"></path>
+                                                <path fill="#37474f"
+                                                    d="M54 26h-3a1 1 0 0 1 1 1v20a1 1 0 0 1-1 1h3a1 1 0 0 0 1-1V27a1 1 0 0 0-1-1z"
+                                                    opacity="1" data-original="#37474f" class="hovered-path"></path>
+                                                <path fill="#ff9801" d="M59 31v12a2 2 0 0 1-2 2h-2V29h2a2 2 0 0 1 2 2z"
+                                                    opacity="1" data-original="#ff9801"></path>
+                                                <path fill="#ff5722"
+                                                    d="M54 26h-4c0-11.046-8.954-20-20-20s-20 8.954-20 20H6C6 12.745 16.745 2 30 2s24 10.745 24 24z"
+                                                    opacity="1" data-original="#ff5722"></path>
+                                                <path fill="#ffdc00"
+                                                    d="M39 41v1a9 9 0 0 1-7 8.78 9.2 9.2 0 0 1-4 0A9 9 0 0 1 21 42v-1z"
+                                                    opacity="1" data-original="#ffdc00"></path>
+                                                <path fill="#fec108"
+                                                    d="M36 41v1a9 9 0 0 1-7 8.78 4 4 0 0 1-.5.08 8.7 8.7 0 0 0 3.5-.08A9 9 0 0 0 39 42v-1z"
+                                                    opacity="1" data-original="#fec108"></path>
+                                                <path fill="#7f8e94" d="M39 28v13H21V28a9 9 0 0 1 18 0z" opacity="1"
+                                                    data-original="#7f8e94"></path>
+                                                <path fill="#545c60"
+                                                    d="M36.36 21.64A9 9 0 0 0 30 19a8.29 8.29 0 0 0-1.5.14A9 9 0 0 1 36 28v13h3V28a9 9 0 0 0-2.64-6.36z"
+                                                    opacity="1" data-original="#545c60"></path>
+                                                <path fill="#37474f" d="M32 50.78V56h-4v-5.22a9.2 9.2 0 0 0 4 0z"
+                                                    opacity="1" data-original="#37474f" class="hovered-path"></path>
+                                                <path fill="#02a9f4" d="M39 58v2H21v-2a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                                                    opacity="1" data-original="#02a9f4"></path>
+                                                <path fill="#0377bc" d="M37 56h-3a2 2 0 0 1 2 2v2h3v-2a2 2 0 0 0-2-2z"
+                                                    opacity="1" data-original="#0377bc"></path>
+                                                <g fill="#000">
+                                                    <path
+                                                        d="M57 28h-1v-1a2 2 0 0 0-1-1.73c0-13.807-11.193-25-25-25s-25 11.193-25 25A2 2 0 0 0 4 27v1H3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h1v1a2 2 0 0 0 2 2h5a3 3 0 0 0 3-3V28a3 3 0 0 0-2.95-3c.519-10.101 8.86-18.026 18.975-18.026S48.481 14.9 49 25a3 3 0 0 0-3 3v18a3 3 0 0 0 3 3h5a2 2 0 0 0 2-2v-1h1a3 3 0 0 0 3-3V31a3 3 0 0 0-3-3zM3 44a1 1 0 0 1-1-1V31a1 1 0 0 1 1-1h1v14zm9-16v18a1 1 0 0 1-1 1H6V27h5a1 1 0 0 1 1 1zM30 5c-11.2.014-20.417 8.814-20.95 20H7C7 12.297 17.297 2 30 2s23 10.297 23 23h-2c-.534-11.206-9.782-20.013-21-20zm24 42h-5a1 1 0 0 1-1-1V28a1 1 0 0 1 1-1h5zm4-4a1 1 0 0 1-1 1h-1V30h1a1 1 0 0 1 1 1z"
+                                                        fill="#000000" opacity="1" data-original="#000000"></path>
+                                                    <path
+                                                        d="M43.05 18.13a1 1 0 0 0 .77-1.64 18 18 0 0 0-27.64 0 1.001 1.001 0 1 0 1.54 1.28 16 16 0 0 1 24.56 0 1 1 0 0 0 .77.36z"
+                                                        fill="#000000" opacity="1" data-original="#000000"></path>
+                                                    <path
+                                                        d="M40.9 20.86a1 1 0 0 0 .18-1.4 14 14 0 0 0-22.16 0 1 1 0 0 0 1.58 1.22 12 12 0 0 1 19 0 1 1 0 0 0 .79.39 1 1 0 0 0 .61-.21z"
+                                                        fill="#000000" opacity="1" data-original="#000000"></path>
+                                                    <path
+                                                        d="M40 42V28c0-5.523-4.477-10-10-10s-10 4.477-10 10v14a10 10 0 0 0 7 9.54V55h-4a3 3 0 0 0-3 3v2a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1v-2a3 3 0 0 0-3-3h-4v-3.46A10 10 0 0 0 40 42zM30 20a8 8 0 0 1 8 8h-5a1 1 0 0 0 0 2h5v2h-5a1 1 0 0 0 0 2h5v2h-5a1 1 0 0 0 0 2h5v2H22v-2h5a1 1 0 0 0 0-2h-5v-2h5a1 1 0 0 0 0-2h-5v-2h5a1 1 0 0 0 0-2h-5a8 8 0 0 1 8-8zm-8 22h16a8 8 0 1 1-16 0zm16 16v1H22v-1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1zm-7-3h-2v-3h2z"
+                                                        fill="#000000" opacity="1" data-original="#000000"></path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    অডিও</a></li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="heading-section mt-4" id="top-lead-content">
         <div class="container">
             <div class="row">
                 <div class="col-lg-9">
