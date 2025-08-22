@@ -345,6 +345,10 @@ header {
     height: 24px;
 }
 
+.close-mb-nav {
+    display: none;
+}
+
 @media (max-width: 991px) {
     .top-header-flex .main-logo {
         width: 125px;
@@ -437,6 +441,10 @@ header {
 
     .extra-links img {
         margin-right: 10px;
+    }
+
+    .close-mb-nav {
+        display: block;
     }
 }
 
