@@ -95,6 +95,10 @@ $(document).ready(function () {
     $('.main-links').removeClass('hide');
     $('.search-area').removeClass('show');
   })
+
+  $('.close-mb-nav').click(function () {
+    $('.all-news-links').removeClass('show');
+  })
   //////////////////////////////////////////////////////////////////////////////////////
 
 function toBnDigits(str) {
