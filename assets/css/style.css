@@ -351,7 +351,7 @@ header {
 
 @media (max-width: 991px) {
     .top-header-flex .main-logo {
-        width: 125px;
+        width: 110px;
         display: inline-block;
         margin-top: 5px;
     }
@@ -360,6 +360,7 @@ header {
         padding: 2px 4px !important;
         font-size: 12px;
         line-height: 16px;
+        white-space: nowrap;
     }
 
     .navbar-area .navbar-links-area {
@@ -553,6 +554,7 @@ header {
 
 .news-md-grid {
     position: relative;
+    margin-bottom: 10px;
 }
 
 .news-md-grid .title {
@@ -1329,4 +1331,56 @@ address {
         line-height: 22px;
     }
 
+}
+
+.sub-cat-nav {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.sub-cat-nav li a {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1f1f1f;
+    padding: 10px;
+    transition: all 0.5s ease;
+}
+
+.sub-cat-nav li a:hover {
+    color: #021b74;
+}
+
+@media(max-width: 991px) {
+    .section-title-flex .page-title {
+        width: 90%;
+    }
+
+    .section-title-flex.sub-cate-pg a {
+        width: 10%;
+        text-align: end;
+        justify-content: end;
+    }
+
+    .sub-cat-nav {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0;
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+        width: 100%;
+        justify-content: flex-start;
+        padding-bottom: 5px;
+        overflow-y: hidden;
+    }
+}
+
+@media (max-width: 767px) {
+    .news-list.pg-details .title {
+        font-size: 20px !important;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
 }
