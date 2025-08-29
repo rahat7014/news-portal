@@ -117,9 +117,7 @@ $(document).ready(function () {
     return String(str).replace(/\d/g, d => map[d]);
   }
 
-
   function gregorianToBangla(gDate) {
-
     const parts = new Intl.DateTimeFormat('en-GB', {
       timeZone: 'Asia/Dhaka',
       year: 'numeric',
@@ -131,9 +129,7 @@ $(document).ready(function () {
       gm = parts.month,
       gd = parts.day;
 
-
     const banglaYear = (gm > 4 || (gm === 4 && gd >= 14)) ? (gy - 593) : (gy - 594);
-
 
     const newYear = new Date(Date.UTC(gy, 3, 14, 0, 0, 0));
     const current = new Date(Date.UTC(gy, gm - 1, gd, 0, 0, 0));
@@ -141,14 +137,11 @@ $(document).ready(function () {
       newYear.setUTCFullYear(gy - 1);
     }
 
-
     const daysPassed = Math.floor((current - newYear) / 86400000);
-
 
     const monthNames = ["বৈশাখ", "জ্যৈষ্ঠ", "আষাঢ়", "শ্রাবণ", "ভাদ্র", "আশ্বিন", "কার্তিক", "অগ্রহায়ণ", "পৌষ", "মাঘ", "ফাল্গুন", "চৈত্র"];
     const isLeapGregorian = ((gy % 4 === 0 && gy % 100 !== 0) || (gy % 400 === 0));
     const monthLengths = [31, 31, 31, 31, 31, 30, 30, 30, 30, 30, (isLeapGregorian ? 30 : 29), 30];
-
 
     let rem = daysPassed,
       m = 0;
@@ -167,7 +160,6 @@ $(document).ready(function () {
   }
 
   function formatBanglaFull(gDate = new Date()) {
-
     const weekday = new Intl.DateTimeFormat('bn-BD', {
       timeZone: 'Asia/Dhaka',
       weekday: 'long'
@@ -185,15 +177,20 @@ $(document).ready(function () {
       year: 'numeric'
     }).format(gDate);
 
-
     const bn = gregorianToBangla(gDate);
 
     return `${weekday}, ${day} ${month} ${year}, ${toBnDigits(bn.day)} ${bn.monthName} ${toBnDigits(bn.year)}`;
   }
 
+  // === Dynamic date ===
+  function showBanglaDate() {
+    document.getElementById('bn-date').textContent = formatBanglaFull(new Date());
+  }
 
-  const sample = new Date('2025-08-22T00:00:00+06:00');
-  document.getElementById('bn-date').textContent = formatBanglaFull(sample);
+  // show immediately
+  showBanglaDate();
+  // update every midnight
+  setInterval(showBanglaDate, 60 * 60 * 1000);
 
 
 
