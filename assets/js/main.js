@@ -59,6 +59,20 @@ $(document).ready(function () {
     $('.scroll-one').addClass('hide');
   });
 
+  // ============================================
+
+  $(window).scroll(function () {
+    $scrollamount = $(window).scrollTop();
+
+    if ($scrollamount > 150) {
+      $(".main-navbar").addClass("fixed_nav");
+
+    } else {
+      $(".main-navbar").removeClass("fixed_nav");
+
+    }
+  });
+
   //drop new add-2 change the code , plz replace old code of this porson (start)
 
   $('.ham-burger').click(function () {
